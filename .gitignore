@@ -1,6 +1,6 @@
 datasets/
-models/best_model.keras
-models/training_history.pkl
+models/image/best_model.keras
+models/image/training_history.pkl
 
 __pycache__/
 *.pyc
