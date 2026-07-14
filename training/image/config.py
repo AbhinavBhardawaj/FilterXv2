@@ -11,19 +11,19 @@ editing this file.
 """
 
 from pathlib import Path
-import sys
-# Project Paths
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-if "google.colab" in sys.modules:
-    DATASET_DIR = Path("/content/drive/MyDrive/datasets/image")
+COLAB_DATASET = Path("/content/drive/MyDrive/datasets/image")
 
+if COLAB_DATASET.exists():
+    DATASET_DIR = COLAB_DATASET
 else:
     DATASET_DIR = PROJECT_ROOT / "datasets" / "image"
-# Dataset
+
 TRAIN_DIR = DATASET_DIR / "train"
-VAL_DIR = DATASET_DIR / "validation"
-TEST_DIR = DATASET_DIR / "test"
+VAL_DIR   = DATASET_DIR / "validation"
+TEST_DIR  = DATASET_DIR / "test"
 
 # Models
 MODEL_DIR = PROJECT_ROOT / "models" / "image"
