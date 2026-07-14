@@ -1,0 +1,17 @@
+datasets/
+models/
+reports/
+
+__pycache__/
+*.pyc
+
+.venv/
+venv/
+
+logs/
+
+.vscode/
+
+.DS_Store
+
+.ipynb_checkpoints/
