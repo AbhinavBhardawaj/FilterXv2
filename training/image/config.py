@@ -16,7 +16,7 @@ import sys
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 if "google.colab" in sys.modules:
-    DATASET_DIR = "/content/drive/MyDrive/datasets/image"
+    DATASET_DIR = Path("/content/drive/MyDrive/datasets/image")
 
 else:
     DATASET_DIR = PROJECT_ROOT / "datasets" / "image"
