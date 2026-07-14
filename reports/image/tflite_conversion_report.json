@@ -1,0 +1,15 @@
+{
+    "keras_model_size_mb": 19.06,
+    "tflite_model_size_mb": 2.55,
+    "size_reduction_percent": 86.61,
+    "input_shape": [
+        1,
+        224,
+        224,
+        3
+    ],
+    "output_shape": [
+        1,
+        1
+    ]
+}

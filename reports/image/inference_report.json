@@ -1,0 +1,7 @@
+{
+    "average_latency_ms": 87.46653168003832,
+    "min_latency_ms": 64.38401699961105,
+    "max_latency_ms": 327.30427499882353,
+    "std_latency_ms": 31.680594530646836,
+    "model_size_mb": 19.06110382080078
+}
