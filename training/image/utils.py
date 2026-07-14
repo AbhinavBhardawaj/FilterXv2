@@ -25,6 +25,7 @@ import matplotlib.pyplot as plt
 from config import DPI
 import numpy as np
 import tensorflow as tf
+from config import MODEL_SUMMARY_PATH
 
 # Logger
 def setup_logger(name: str = "FilterX") -> logging.Logger:
@@ -92,7 +93,7 @@ def load_pickle(filepath: Path):
         return pickle.load(f)
 
 # Model Summary
-def save_model_summary(model, filepath: Path) -> None:
+def save_model_summary(model, filepath= MODEL_SUMMARY_PATH) -> None:
     # Save model.summary() into a text file.
     filepath.parent.mkdir(parents=True, exist_ok=True)
 
