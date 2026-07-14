@@ -80,7 +80,7 @@ MONITOR_METRIC = "val_auc"
 MONITOR_MODE = "max"
 
 # Prediction
-DEFAULT_THRESHOLD = 0.50
+DEFAULT_THRESHOLD = 0.2
 
 # Saved Models
 BEST_MODEL_PATH = MODEL_DIR / "best_model.keras"
